@@ -1,15 +1,3 @@
-MVC
-session 28 and 29--> viewdata, viewbag, tempdata , 29-->cookie
-
-
-
-c#
-session 18--> OOPs
-session 19--> methods and encapsulation
-
-session 20-->method continued, in, out parameter return keyword, tuples
-session 21-->ref parameter,params
-
-7814171358
+learn about async and defer in javascript session 4
 
 
