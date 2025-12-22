@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //primitive data types are immutable. Non-primitive are mutable
+
+        let str = 'hello';
+        str[0] = 'H'; //immutable
+        str[1] = 'A';
+        console.log(str); //hello
+
+//object and array are non-primitive data types
+        let arr = [1,2,3,4,5];
+        arr[0] = 10; //mutable
+        arr[1] = 20;
+        console.log(arr); //[10,20,3,4,5]
+    </script>
+</body>
+</html>

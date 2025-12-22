@@ -1,0 +1,10 @@
+<script>
+
+    let user = {};
+    user['name'] = 'John';
+    user['age'] = 30;
+// Using a symbol as a property key, it is used so that key is not visible to the end user.In this case it will be like Symbol(my id): 12345
+    let id = Symbol('my id');
+    user[id] = 12345;
+    console.log(user);
+</script>
