@@ -1,0 +1,21 @@
+<script>
+    class Employee{
+        name = "Alice";
+        age = 28;
+
+        f1(){ //normal function: this = how it is called
+            console.log('Inside f1', this.name , this.sal);
+
+           function f2(){ //normal function: this = global object (window)
+                console.log('Inside f2', this.name , this.sal);
+            }
+            functionf2();
+
+            let f3=()=>{ //Arrow function: this = where it is written, this = Employee object
+                console.log('Inside f3', this.name , this.sal);
+            }
+        }
+    }
+    let emp = new Employee();
+    emp.f1();
+</script>
