@@ -1,0 +1,21 @@
+<body>
+    <button onclick="sayHi()">Click me </button>
+    <button onclick="incrementCount()">Increment Count</button>
+    <h1>Count Value:: <span>0</span></h1>
+    <script>
+        // Closure Example-: we can access count variable inside both functions because count is defined in the outer scope of both functions. 
+        // If we define count inside any function then other function will not be able to access it and it will throw an error and we can not update the count value.
+        // we can also use let or const to define count variable. It will work the same way.
+        var count = 0;
+        function incrementCount(){
+            count ++;
+            document.querySelector('span').innerText = count;
+        }
+
+        function sayHi(){
+            console.log('Hi');
+            count++;
+            document.querySelector('span').innerText = count;
+        }
+    </script>
+</body>
